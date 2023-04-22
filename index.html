@@ -9,12 +9,12 @@
 <body>
     <h1>Bellamy's Vibration Messenger Tool</h1>
     <div>
-        <button id="vibrate">Vibrate</button>
+        <button id="vibrate" onclick="vibrate()">Vibrate</button>
     </div>
     <script>
         function vibrate() {
-            if (window.navigator) {
-                window.navigator.vibrate(2000)
+            if (navigator) {
+                navigator.vibrate(2000)
             }
         }
     </script>
