@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellamy's Vibration Messenger</title>
+</head>
+<body>
+    <h1>Bellamy's Vibration Messenger Tool</h1>
+    <div>
+        <button id="vibrate1" onclick="vibrate()">A: <br> Sends one vibration</button>
+        <button id="vibrate2" onclick="vibrate2()">B: <br> Sends two vibrations</button>
+        <button id="vibrate3" onclick="vibrate()">C: <br> Sends three vibrations</button>
+        <button id="vibrate4" onclick="vibrate()">D: <br> Sends four vibrations</button>
+        <button id="vibrate5" onclick="vibrate()">E: <br> Sends five vibrations</button>
+    </div>
+    <script>
+        function vibrate() {
+            if (navigator) {
+                navigator.vibrate(1000)
+            }
+        }
+        function vibrate2() {
+            if (navigator) {
+                navigator.vibrate(1000, 500, 1000)
+            }
+        }
+    </script>
+</body>
+</html>
