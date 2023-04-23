@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellamy's Vibration Messenger</title>
+</head>
+<body>
+    <h1>Bellamy's Vibration Messenger Tool</h1>
+    <h4>Welcome to one of the swaggiest apps of all time</h4>
+    <div>
+        <button id="vibrate1" onclick="vibrate()">A: <br> Sends one vibration</button>
+        <button id="vibrate2" onclick="vibrate2()">B: <br> Sends two vibrations</button>
+        <button id="vibrate3" onclick="vibrate3()">C: <br> Sends three vibrations</button>
+        <button id="vibrate4" onclick="vibrate4()">D: <br> Sends four vibrations</button>
+        <button id="vibrate5" onclick="vibrate5()">E: <br> Sends five vibrations</button>
+    </div>
+    <script>
+        function vibrate() {
+            if (navigator) {
+                navigator.vibrate(500)
+            }
+        }
+        
+        function vibrate2() {
+            if (navigator) {
+                navigator.vibrate([500, 500, 500])
+            }
+        }
+        
+        function vibrate3() {
+            if (navigator) {
+                navigator.vibrate([500, 500, 500, 500, 500])
+            }
+        }
+        
+        function vibrate4() {
+            if (navigator) {
+                navigator.vibrate([500, 500, 500, 500, 500, 500, 500])
+            }
+        }
+
+        function vibrate5() {
+            if (navigator) {
+                navigator.vibrate([500, 500, 500, 500, 500, 500, 500, 500, 500])
+            }
+        }
+    </script>
+</body>
+</html>
